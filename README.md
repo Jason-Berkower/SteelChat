@@ -87,7 +87,7 @@ First API Snippet - SteelChat API, hosted by Airtable.
 
 | Day      | Deliverable                                                                 | Status     |
 | -------- | --------------------------------------------------------------------------- | ---------- |
-| March 25 | Prompt / Wireframes / Priority Matrix / Timeframes / Readme                 | Complete   |
+| March 25 | Prompt / Wireframes / Component Hierarchy / Timeframes / Readme             | Complete   |
 | March 26 | Project Approval / Initial app setup / Research / Basic Render Capabilities | Incomplete |
 | March 28 | Pseudocode / Base Component Implementation                                  | Incomplete |
 | March 29 | Core Styling / Base MVP completed                                           | Incomplete |
