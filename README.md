@@ -6,15 +6,17 @@ SteelChat (`Working Name`)
 
 ## Project Description
 
-Messaging applications help you stay in touch with friends, family, and coworkers alike! They've become a part of daily life, with all of us utilizing at least one form of messenger to facilitate communication every day. This messenger will continue to facilitate this communicative need whilst providing people with a place to safely express themselves through some kind of avatar.
+There's never been a better time to develop a message board quite like now. With a pandemic altering daily life as we know it, everyone is looking for some platform to make communication easy and accessible. SteelChat looks to offer users a communication experience via a message board layout, with minimal barriers to entry. All you need to do is create a username, set a password, and you're ready to go!
+
+The landing page will contain the relevant components needed for a user to quickly set up their username, check out the last few messages posted, and get right to communicating with other users!
 
 ## Wireframes
 
-[Landing Page WF](https://i.imgur.com/pclG7PL.png)
+[Landing Page WF](https://i.imgur.com/2iD6cut.png)
 
 ## Component Hierarchy
 
-[SteelChat Component Hierarchy](https://i.imgur.com/ZVulpsH.png)
+[SteelChat Component Hierarchy](https://i.imgur.com/pkohfFM.png)
 
 ## API and Data Sample
 
@@ -25,11 +27,9 @@ First API Snippet - SteelChat API, hosted by Airtable.
         {
             "id": "recXLcX0sJqeN7jsa",
             "fields": {
-                "username": "GronkMan02",
+                "password": "GronkIsCool2929_",
                 "name": "Gronk the Barbarian",
-                "race/species": "Human",
-                "location": "Hyborian-Age Earth",
-                "status": "Give me Goblins to slay!"
+                "username": "GronkMan02"
             },
             "createdTime": "2021-03-26T14:01:07.000Z"
         },
@@ -76,10 +76,9 @@ First API Snippet - SteelChat API, hosted by Airtable.
 
 ### PostMVP
 
-- Add multiple chat rooms
-- Implement realtime chat
+- Implement pseudo-user-authentication
 - Implement advanced chat functions (colored text, emotes, dice rolling)
-- Create dynamic, user-editable profiles
+- Create dynamic, user-editable profiles (more than just a username)
 
 ---
 
@@ -88,7 +87,7 @@ First API Snippet - SteelChat API, hosted by Airtable.
 | Day      | Deliverable                                                                 | Status     |
 | -------- | --------------------------------------------------------------------------- | ---------- |
 | March 25 | Prompt / Wireframes / Component Hierarchy / Timeframes / Readme             | Complete   |
-| March 26 | Project Approval / Initial app setup / Research / Basic Render Capabilities | Incomplete |
+| March 26 | Project Approval / Initial app setup / Research / Basic Render Capabilities | Partial    |
 | March 28 | Pseudocode / Base Component Implementation                                  | Incomplete |
 | March 29 | Core Styling / Base MVP completed                                           | Incomplete |
 | March 30 | Transition to PostMVP                                                       | Incomplete |
@@ -102,21 +101,20 @@ First API Snippet - SteelChat API, hosted by Airtable.
 
 | Component                           | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Concept Research                    |    M     |     3.5hrs     |       –       |      –      |
+| Concept Research                    |    M     |     1.5hrs     |       –       |      –      |
 | Basic App Hiearachy                 |    H     |     1.5hrs     |       –       |      –      |
-| Addressing API                      |    M     |     1.5hrs     |       –       |      –      |
+| Addressing API                      |    M     |      3hrs      |       –       |      –      |
 | Building Navbar/Footer              |    M     |     1.5hr      |       –       |      –      |
-| Building User Profile & Forms       |    H     |      4hrs      |       –       |      –      |
-| Building User Search                |    H     |      2hrs      |       –       |      –      |
-| Building Chat Interface             |    H     |      6hrs      |       –       |      –      |
+| Building User Profile & Forms       |    H     |      2hrs      |       –       |      –      |
+| Building Message Interface          |    H     |      6hrs      |       –       |      –      |
 | Building Currently Online/New Users |    H     |      4hrs      |       –       |      –      |
 | Adding Styling                      |    M     |      6hrs      |       –       |      –      |
 | PostMVP Goals                       |    M     |     12hrs      |       –       |      –      |
-| Total                               |    H     |     42hrs      |               |      –      |
+| Total                               |          |    38.5hrs     |               |      –      |
 
-#### Project Completion Floor: ~36hrs
+#### Project Completion Floor: ~30hrs
 
-#### Project Completion Ceiling: ~60hrs
+#### Project Completion Ceiling: ~50hrs
 
 ---
 
@@ -152,6 +150,11 @@ First API Snippet - SteelChat API, hosted by Airtable.
 ---
 
 ## Changelog
+
+### (March 26th) v0.2.1, "Second Pitch
+
+- Modified readme elements to reflect new project direction.
+- Adjusted wireframes, api, and component hierarchy.
 
 ### (March 26th) v0.2, "Pitch"
 
