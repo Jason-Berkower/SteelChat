@@ -99,18 +99,18 @@ First API Snippet - SteelChat API, hosted by Airtable.
 
 ## Timeframes
 
-| Component                           | Priority | Estimated Time | Time Invested | Actual Time |
-| ----------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Concept Research                    |    M     |     1.5hrs     |       –       |      –      |
-| Basic App Hiearachy                 |    H     |     1.5hrs     |       –       |      –      |
-| Addressing API                      |    M     |      3hrs      |       –       |      –      |
-| Building Navbar/Footer              |    M     |     1.5hr      |       –       |      –      |
-| Building User Profile & Forms       |    H     |      2hrs      |       –       |      –      |
-| Building Message Interface          |    H     |      6hrs      |       –       |      –      |
-| Building Currently Online/New Users |    H     |      4hrs      |       –       |      –      |
-| Adding Styling                      |    M     |      6hrs      |       –       |      –      |
-| PostMVP Goals                       |    M     |     12hrs      |       –       |      –      |
-| Total                               |          |    38.5hrs     |               |      –      |
+| Component                      | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------------ | :------: | :------------: | :-----------: | :---------: |
+| Concept Research               |    M     |     1.5hrs     |       –       |      –      |
+| Basic App Hierarchy            |    H     |     1.5hrs     |       –       |      –      |
+| Addressing API                 |    M     |      3hrs      |       –       |      –      |
+| Building Navbar/Footer         |    M     |     1.5hr      |       –       |      –      |
+| Building User Profile & Forms  |    H     |      2hrs      |       –       |      –      |
+| Building Message Interface     |    H     |      6hrs      |       –       |      –      |
+| Building Last 10 Messages View |    H     |      3hrs      |       –       |      –      |
+| Adding Styling                 |    M     |      6hrs      |       –       |      –      |
+| PostMVP Goals                  |    M     |     12hrs      |       –       |      –      |
+| Total                          |          |    37.5hrs     |               |      –      |
 
 #### Project Completion Floor: ~30hrs
 
