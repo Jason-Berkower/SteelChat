@@ -21,16 +21,18 @@ Messaging applications help you stay in touch with friends, family, and coworker
 First API Snippet - SteelChat API, hosted by Airtable.
 
 ```
-base('users').create([
-  {
-    "fields": {
-      "username": "GronkMan02",
-      "location": "Hyborian-Age Earth",
-      "race/species": "Human",
-      "status": "Give me Goblins to slay!",
-      "name": "Gronk the Barbarian"
-    }
-  },
+    "records": [
+        {
+            "id": "recXLcX0sJqeN7jsa",
+            "fields": {
+                "username": "GronkMan02",
+                "name": "Gronk the Barbarian",
+                "race/species": "Human",
+                "location": "Hyborian-Age Earth",
+                "status": "Give me Goblins to slay!"
+            },
+            "createdTime": "2021-03-26T14:01:07.000Z"
+        },
 ```
 
 ## MVP
