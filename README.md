@@ -76,8 +76,8 @@ First API Snippet - SteelChat API, hosted by Airtable.
 
 ### PostMVP
 
-- Implement pseudo-user-authentication
-- Implement advanced chat functions (colored text, emotes, dice rolling)
+- Implement pseudo-user-authentication (perhaps with the use of local storage)
+- Implement advanced message functions (colored text, emotes, etc.)
 - Create dynamic, user-editable profiles (more than just a username)
 
 ---
