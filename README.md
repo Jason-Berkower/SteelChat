@@ -10,21 +10,30 @@ Messaging applications help you stay in touch with friends, family, and coworker
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+[Landing Page WF](https://i.imgur.com/pclG7PL.png)
 
 ## Component Hierarchy
 
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+[SteelChat Component Hierarchy](https://i.imgur.com/ZVulpsH.png)
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This **must** be properly formatted. An example is below:
+First API Snippet - SteelChat API, hosted by Airtable.
 
 ```
-Currently Empty
+base('users').create([
+  {
+    "fields": {
+      "username": "GronkMan02",
+      "location": "Hyborian-Age Earth",
+      "race/species": "Human",
+      "status": "Give me Goblins to slay!",
+      "name": "Gronk the Barbarian"
+    }
+  },
 ```
 
-### MVP
+## MVP
 
 #### Planning
 
@@ -63,37 +72,50 @@ Currently Empty
 
 - Commit early and often! Have GitHub commits (documenting substantial progress) every day. You should have a minimum of 20 commits total.
 
-#### PostMVP
+### PostMVP
 
-_These are examples only. Replace with your own Post-MVP features._
-
-- Add second API
-- Use local storage to save user favorites
+- Add multiple chat rooms
+- Implement realtime chat
+- Implement advanced chat functions (colored text, emotes, dice rolling)
+- Create dynamic, user-editable profiles
 
 ---
 
 ## Project Schedule
 
-| Day         | Deliverable                                        | Status     |
-| ----------- | -------------------------------------------------- | ---------- |
-| March 25    | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| March 26-27 | Project Approval                                   | Incomplete |
-| March 28    |                                                    | Incomplete |
-| March 29    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| March 30    | Pseudocode / actual code                           | Incomplete |
-| March 31    | Initial Clickable Model                            | Incomplete |
-| April 1     | MVP                                                | Incomplete |
-| April 2     | Presentations                                      | Incomplete |
+| Day      | Deliverable                                                                 | Status     |
+| -------- | --------------------------------------------------------------------------- | ---------- |
+| March 25 | Prompt / Wireframes / Priority Matrix / Timeframes / Readme                 | Partial    |
+| March 26 | Project Approval / Initial app setup / Research / Basic Render Capabilities | Incomplete |
+| March 27 | Nothing (religious observance)                                              | Incomplete |
+| March 28 | Pseudocode / Base Component Implementation                                  | Incomplete |
+| March 29 | Core Styling / Base MVP completed                                           | Incomplete |
+| March 30 | Transition to PostMVP                                                       | Incomplete |
+| March 31 | Continuation of PostMVP / Polish                                            | Incomplete |
+| April 1  | Polish / Final debug / Final PostMVP                                        | Incomplete |
+| April 2  | Deployment / Presentations                                                  | Incomplete |
 
 ---
 
 ## Timeframes
 
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |     5hrs      |    5hrs     |
+| Component                           | Priority | Estimated Time | Time Invested | Actual Time |
+| ----------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Concept Research                    |    M     |     3.5hrs     |       –       |      –      |
+| Basic App Hiearachy                 |    H     |     1.5hrs     |       –       |      –      |
+| Addressing API                      |    M     |     1.5hrs     |       –       |      –      |
+| Building Navbar/Footer              |    M     |     1.5hr      |       –       |      –      |
+| Building User Profile & Forms       |    H     |      4hrs      |       –       |      –      |
+| Building User Search                |    H     |      2hrs      |       –       |      –      |
+| Building Chat Interface             |    H     |      6hrs      |       –       |      –      |
+| Building Currently Online/New Users |    H     |      4hrs      |       –       |      –      |
+| Adding Styling                      |    M     |      6hrs      |       –       |      –      |
+| PostMVP Goals                       |    M     |     12hrs      |       –       |      –      |
+| Total                               |    H     |     42hrs      |               |      –      |
+
+#### Project Completion Floor: ~36hrs
+
+#### Project Completion Ceiling: ~60hrs
 
 ---
 
@@ -101,12 +123,40 @@ _These are examples only. Replace with your own Post-MVP features._
 
 ### Strengths:
 
+- Ambition. This will drive me to pursue each goal I set out and reach for the stars. That's partially why I chose this as my project; I want an opportunity to take what I've learned and put it towards something complex and involved.
+- Creativity. I can use my out-of-the-box thinking to address problems as they come up.
+- ADHD. Even with its shortcomings, it has granted me the gift of hyperfocus when it comes to projects I'm interested in. I can get a lot done in a short span of time if I get into a groove.
+- Determination/Grit. If I'm setting a goal for myself, I'm going to fight to achieve it. I'll fight to hit that goal and even go above and beyond.
+
 ### Weaknesses:
+
+- Ambition. As with project one, it's possible that I'll set goals that are a little too lofty and find myself scrambling to finish certain things at the last moment.
+- ADHD. While it allows me to hyperfocus on things I'm interested in, there's always the lingering threat of getting super distracted and losing track of time. I have strategies set up to mitigate this as much as possible, but it still bears mentioning.
+- Stubbornness. I've bashed my head against problems that felt like they took hours to finish. I've sat in frustration over trying to get certain aspects of an app to function how I want them to. This can certainly get in the way of further progress.
+- Overthinking. This is something I'm working on breaking, but its a difficult road to travel. I can definitely find myself stumbling over myself when trying to implement certain components or when trying to get different elements of an app to interact with each other.
 
 ### Opportunities:
 
+- Securing a concrete understanding of the concepts and practices I've learned throughout the course.
+- Gaining the ability to strike out and experiment.
+- Build a project I can show off proudly in its "course-finished" state, then show off post-course in its "use-ready" state.
+
 ### Threats:
+
+- The world could end.
+- I can try using something like bootstrap and end up completely wrecking my application.
+- I might just break my application in general because of human error.
+- My goals might be too unrealistic at this time.
 
 ---
 
 ## Changelog
+
+### (March 26th) v0.2, "Pitch"
+
+- Finished the Readme.
+
+### (March 25th) v0.1, "Initial Concept"
+
+- Began readme and gathered relevant resources for pitch.
+- Created boilerplate app.
