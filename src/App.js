@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
 import "./App.css";
 
 function App() {
