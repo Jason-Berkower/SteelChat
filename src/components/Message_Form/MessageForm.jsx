@@ -12,6 +12,8 @@ function MessageForm(props) {
     user: '',
     time: '',
   })
+  const history = useHistory();
+  const params = useParams();
 
   useEffect(() => {
 

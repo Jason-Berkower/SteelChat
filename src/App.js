@@ -1,4 +1,5 @@
 import axios from "axios";
+import { baseURL, baseURL2, config } from "./services/Index";
 import { Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
