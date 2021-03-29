@@ -5,7 +5,7 @@ import './MessageForm.css';
 
 
 
-function MessageForm() {
+function MessageForm(props) {
   let [message, setMessage] = uesState({
     message: '',
     user: '',
