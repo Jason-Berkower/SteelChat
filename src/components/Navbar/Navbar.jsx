@@ -5,6 +5,7 @@ function Navbar() {
   return (
     <div>
       <Link to='/'>HOME</Link>
+      <Link to='/newprofile'>Create a Username</Link>
     </div>
   )
 }
