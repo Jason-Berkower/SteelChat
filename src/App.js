@@ -2,7 +2,7 @@ import axios from "axios";
 import { Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import UserProfile from "./components/User_Profile/UserProfile.jsx";
+import ProfileForm from "./components/Profile_Form/ProfileForm.jsx";
 import MessageBoard from "./components/Message_Board/MessageBoard.jsx";
 import "./App.css";
 
@@ -14,7 +14,7 @@ function App() {
       <h1>Welcome to SteelChat</h1>
       <h3>The Message Board of Tomorrow!</h3>
       <Route path="/newprofile">
-        <UserProfile />
+        <ProfileForm />
       </Route>
       <Route>
         <MessageBoard />

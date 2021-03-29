@@ -6,13 +6,13 @@ import './MessageForm.css';
 
 
 function MessageForm(props) {
-  let [message, setMessage] = uesState({
+  let [message, setMessage] = useState({
     message: '',
     user: '',
     time: '',
   })
 
-  useEffec(() => {
+  useEffect(() => {
 
   }, [])
 
