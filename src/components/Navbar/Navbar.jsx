@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div id="nav">
       <Link to='/'>HOME</Link>
-      <Link to='/newpost'>CREATE A POST</Link>
+      <Link to='/post'>CREATE A POST</Link>
       <Link to='/newprofile'>CREATE A USERNAME</Link>
     </div>
   )

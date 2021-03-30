@@ -38,7 +38,7 @@ function App() {
       <Route path="/newprofile">
         <ProfileForm users={users} setToggle={setToggle} />
       </Route>
-      <Route path="/">
+      <Route exact path="/">
         <div className="card-container">
           {messages.map((message) => {
             return (
@@ -51,10 +51,10 @@ function App() {
           })}
         </div>
       </Route>
-      <Route path="/newpost">
+      <Route path="/post">
         <MessageForm messages={messages} setToggle={setToggle} />
       </Route>
-      <Route path="/newpost/:id">
+      <Route path="/editpost/:id">
         <MessageForm messages={messages} setToggle={setToggle} />
       </Route>
       <Footer />
