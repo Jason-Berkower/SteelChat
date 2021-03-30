@@ -54,7 +54,7 @@ function App() {
       <Route path="/newpost">
         <MessageForm messages={messages} setToggle={setToggle} />
       </Route>
-      <Route path="/edit/:id">
+      <Route path="/newpost/:id">
         <MessageForm messages={messages} setToggle={setToggle} />
       </Route>
       <Footer />
