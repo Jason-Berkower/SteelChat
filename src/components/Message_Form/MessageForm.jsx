@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { baseURL, config } from '../../services/Index';
+import { baseURL2, config } from '../../services/Index';
 import { useHistory, useParams } from 'react-router-dom';
 import './MessageForm.css';
 
@@ -26,7 +26,7 @@ function MessageForm(props) {
 
   function handleChange(event) {
     let { name, value } = event.target;
-    newMessage((prevState) => ({ ...prevState, [name]: value }));
+    setMessage((prevState) => ({ ...prevState, [name]: value }));
   }
 
   async function handleSubmit(event) {
