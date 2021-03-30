@@ -44,13 +44,13 @@ function ProfileForm(props) {
       <h3>Enter your information below</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username: </label>
-        <input type='text' name='username' required onChange={handleChange} />
+        <input type='text' name='username' required onChange={handleChange} value={user.username} />
         <label htmlFor='password'>Password: </label>
-        <input type='password' name='password' required onChange={handleChange} />
+        <input type='password' name='password' required onChange={handleChange} value={user.password} />
         <label htmlFor='confirm-password'>Confirm Password: </label>
         <input type='password' name='confirm-password' required onChange={handleChange} />
         <label htmlFor='name'>Name: </label>
-        <input type='text' name='name' onChange={handleChange} />
+        <input type='text' name='name' onChange={handleChange} value={user.name} />
         <input id='submit' type='submit' />
       </form>
     </div>

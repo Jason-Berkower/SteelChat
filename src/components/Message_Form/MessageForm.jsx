@@ -16,24 +16,38 @@ function MessageForm(props) {
   const params = useParams();
 
   useEffect(() => {
-
-  }, [])
+    if (params.id && props.messages.length > 0) {
+      const newMessage = props.messages.find((message) => {
+        return message.id === params.id;
+      })
+      setMessage(newMessage.fields);
+    }
+  }, [params.id, props.messages])
 
   function handleChange(event) {
-
+    let { name, value } = event.target;
+    newMessage((prevState) => ({ ...prevState, [name]: value }));
   }
 
   async function handleSubmit(event) {
     event.preventDefault();
+    if (params.id) {
+      const updateURL = `${baseURL2}/${params.id}`;
+      await axios.put(updateURL, { feilds: message }, config);
+    } else {
+      await axios.post(baseURL2, { fields: message }, config);
+    }
 
+    props.setToggle((prevState) => !prevState);
+    history.push('/');
   }
 
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor='message'>Message: </label>
-      <input type='text' name='message' required onChange={handleChange} />
+      <input type='text' name='message' required onChange={handleChange} value={message.message} />
       <label htmlFor='user'>Username: </label>
-      <input type='text' name='user' required onChange={handleChange} />
+      <input type='text' name='user' required onChange={handleChange} value={message.user} />
       <input id='submit' type='submit' />
     </form>
   )
