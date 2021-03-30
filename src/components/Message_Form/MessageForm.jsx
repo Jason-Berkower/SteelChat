@@ -10,7 +10,6 @@ function MessageForm(props) {
   let [message, setMessage] = useState({
     message: '',
     user: '',
-    time: '',
   })
   const history = useHistory();
   const params = useParams();
@@ -32,8 +31,8 @@ function MessageForm(props) {
   async function handleSubmit(event) {
     event.preventDefault();
     if (params.id) {
-      const updateURL = `${baseURL2}/${params.id}`;
-      await axios.put(updateURL, { feilds: message }, config);
+      const updateURL2 = `${baseURL2}/${params.id}`;
+      await axios.put(updateURL2, { fields: message }, config);
     } else {
       await axios.post(baseURL2, { fields: message }, config);
     }

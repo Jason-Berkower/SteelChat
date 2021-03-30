@@ -5,7 +5,6 @@ import './MessageBoard.css';
 
 function MessageBoard(props) {
   let data = props.message.fields;
-  console.log(data);
 
   async function handleDelete() {
     let deleteURL = `${baseURL2}/${props.message.id}`
