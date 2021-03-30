@@ -15,8 +15,9 @@ function MessageBoard(props) {
     <div className='card'>
       <h3>{data.message}</h3>
       <h5>{data.user}</h5>
-
-
+      <Link to={`/edit/${props.message.id}`}>
+        <button>EDIT</button>
+      </Link>
       <button onClick={handleDelete}>DELETE</button>
     </div>
   )

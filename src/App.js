@@ -33,24 +33,29 @@ function App() {
     <div className="App">
       <Navbar />
       <Route exact path="/"></Route>
-      <h1>Welcome to SteelChat</h1>
-      <h3>The Message Board of Tomorrow!</h3>
+      <h1 id="title">Welcome to SteelChat</h1>
+      <h2 id="title-card">The Message Board of Tomorrow!</h2>
       <Route path="/newprofile">
         <ProfileForm users={users} setToggle={setToggle} />
+      </Route>
+      <Route path="/">
+        <div className="card-container">
+          {messages.map((message) => {
+            return (
+              <MessageBoard
+                message={message}
+                key={message.id}
+                setToggle={setToggle}
+              />
+            );
+          })}
+        </div>
       </Route>
       <Route path="/newpost">
         <MessageForm messages={messages} setToggle={setToggle} />
       </Route>
-      <Route path="/">
-        {messages.map((message) => {
-          return (
-            <MessageBoard
-              message={message}
-              key={message.id}
-              setToggle={setToggle}
-            />
-          );
-        })}
+      <Route path="/edit/:id">
+        <MessageForm messages={messages} setToggle={setToggle} />
       </Route>
       <Footer />
     </div>
