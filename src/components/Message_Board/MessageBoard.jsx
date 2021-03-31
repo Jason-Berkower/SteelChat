@@ -26,6 +26,7 @@ function MessageBoard(props) {
     <div className='card'>
       <h3>{data.message}</h3>
       <h5>{data.user}</h5>
+      <sub>{data.time}</sub>
       <Link to={`/editpost/${props.message.id}`}>
         <button>EDIT</button>
       </Link>
@@ -33,8 +34,8 @@ function MessageBoard(props) {
       <div id='likes'>
         <h4>Likes: {count}</h4>
         <div id='like-buttons'>
-          <button onClick={increment}>Like</button>
-          <button onClick={decrement}>Dislikes</button>
+          <button id='like' onClick={increment}>Like</button>
+          <button id='dislike' onClick={decrement}>Dislikes</button>
         </div>
       </div>
     </div>

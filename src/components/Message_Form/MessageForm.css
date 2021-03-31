@@ -1,9 +1,23 @@
 form {
   display: flex;
   flex-direction: column;
-  max-width: 75%;
+  max-width: 100%;
   align-items: center;
   margin: 0 auto;
+  margin-top: 50px;
+}
+
+form > input {
+  width: 300px;
+}
+
+form > textarea {
+  width: 500px;
+  margin-bottom: 15px;
+}
+
+.text {
+  height: 100px;
 }
 
 #submit {
@@ -11,6 +25,7 @@ form {
   padding: 8px;
   color: #c6ca53;
   background-color: #252627;
+  margin-top: 25px;
 }
 
 #submit:hover {
