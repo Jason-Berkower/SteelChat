@@ -46,7 +46,7 @@ function MessageForm(props) {
       <label htmlFor='message'>Message: </label>
       <textarea className='text' type='text' name='message' required onChange={handleChange} value={message.message} placeholder='i.e. "I like cheese!"' />
       <label htmlFor='user'>Username: </label>
-      <input type='text' name='user' required onChange={handleChange} value={message.user} placeholder='Enter Username' />
+      <input id="username" type='text' name='user' required onChange={handleChange} value={message.user} placeholder='Enter Username' />
       <input id='submit' type='submit' />
     </form>
   )
