@@ -4,6 +4,9 @@ body {
 
 .card-container {
   margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #title {

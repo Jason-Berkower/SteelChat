@@ -1,5 +1,22 @@
 .card {
+  height: 275px;
+  width: 275px;
   background-color: white;
+  box-shadow: 1px 1px 8px 5px black;
   padding: 5px;
   margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.card > button,
+.card > a > button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: #c6ca53;
+  background-color: #252627;
 }

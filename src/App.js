@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import ProfileForm from "./components/Profile_Form/ProfileForm.jsx";
 import MessageForm from "./components/Message_Form/MessageForm.jsx";
 import MessageBoard from "./components/Message_Board/MessageBoard.jsx";
+import Search from "./components/Search/Search.jsx";
 import "./App.css";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       <Route exact path="/"></Route>
       <h1 id="title">Welcome to SteelChat</h1>
       <h2 id="title-card">The Message Board of Tomorrow!</h2>
+      <Search />
       <Route path="/newprofile">
         <ProfileForm users={users} setToggle={setToggle} />
       </Route>
