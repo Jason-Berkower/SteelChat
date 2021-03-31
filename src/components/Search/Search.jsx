@@ -36,7 +36,7 @@ function Search(props) {
   return (
     <div>
       <form className="search" onSubmit={handleSubmit}>
-        <input placeholder="Search" onChange={handleChange} />
+        <input placeholder="Search Posts" onChange={handleChange} />
         <input id='submit' type='submit' />
       </form>
     </div>
