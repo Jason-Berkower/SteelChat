@@ -30,3 +30,27 @@
 .card > h5 {
   color: rgb(111, 111, 111);
 }
+
+#likes {
+  display: flex;
+  flex-direction: row;
+}
+
+#like-buttons {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 10px;
+}
+
+#like-buttons > button {
+  border: none;
+  border-radius: 5px;
+  color: #c6ca53;
+  background-color: #252627;
+}
+
+#like-buttons > button:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}

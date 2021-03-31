@@ -33,10 +33,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Route exact path="/"></Route>
-      <h1 id="title">Welcome to SteelChat</h1>
-      <h2 id="title-card">The Message Board of Tomorrow!</h2>
-      <Search />
+      <Route exact path="/">
+        <h1 id="title">Welcome to SteelChat</h1>
+        <h2 id="title-card">The Message Board of Tomorrow!</h2>
+        <Search />
+      </Route>
       <Route path="/newprofile">
         <ProfileForm users={users} setToggle={setToggle} />
       </Route>
