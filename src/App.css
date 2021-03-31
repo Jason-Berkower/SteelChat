@@ -2,6 +2,10 @@ body {
   background-color: #f2efe9;
 }
 
+.card-container {
+  margin: 10px;
+}
+
 #title {
   text-align: center;
   font-size: 48px;

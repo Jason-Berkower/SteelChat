@@ -4,8 +4,12 @@
   padding: 5px;
   text-align: center;
   font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
 
-#footer > p {
+#footer > sub {
   color: #c6ca53;
 }

@@ -3,7 +3,7 @@ import './Footer.css';
 function Footer() {
   return (
     <div id="footer">
-      <p>This is the footer</p>
+      <sub>©Jason Berkower & Varangian Systems</sub>
     </div>
   )
 }

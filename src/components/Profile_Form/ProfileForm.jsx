@@ -30,10 +30,13 @@ function ProfileForm(props) {
   async function handleSubmit(event) {
     event.preventDefault();
     if (params.id) {
-      const updateURL = `${baseURL}/${params.id}`;
-      await axios.put(updateURL, { fields: user }, config);
+      let password = document.getElementById('password');
+      if (password.length >= 8 && password.length <= 32) {
+        const updateURL = `${baseURL}/${params.id}`;
+        await axios.put(updateURL, { fields: user }, config);
+      }
     } else {
-      await axios.post(baseURL, { fields: user }, config);
+      alert("Insufficient Password Length! Must be 8 or more characters long.");
     }
     props.setToggle((prevState) => !prevState);
     history.push('/');
@@ -44,13 +47,11 @@ function ProfileForm(props) {
       <h3>Enter your information below</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username: </label>
-        <input type='text' name='username' required onChange={handleChange} value={user.username} />
+        <input type='text' name='username' required onChange={handleChange} value={user.username} placeholder="i.e. SurgeBrand8" />
         <label htmlFor='password'>Password: </label>
-        <input type='password' name='password' required onChange={handleChange} value={user.password} />
-        <label htmlFor='confirm-password'>Confirm Password: </label>
-        <input type='password' name='confirm-password' required onChange={handleChange} />
+        <input id='password' type='password' name='password' required onChange={handleChange} value={user.password} placeholder="Enter Password" />
         <label htmlFor='name'>Name: </label>
-        <input type='text' name='name' onChange={handleChange} value={user.name} />
+        <input type='text' name='name' onChange={handleChange} value={user.name} placeholder="i.e. John Doe" />
         <input id='submit' type='submit' />
       </form>
     </div>
