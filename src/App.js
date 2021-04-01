@@ -14,11 +14,8 @@ function App() {
   const [users, setUsers] = useState([]);
   const [messages, setMessages] = useState([]);
   const [toggle, setToggle] = useState(false);
-
-  // let [messages, setMessages] = useState([]);
-  let [filteredMessages, setFilteredMessages] = useState([]);
-  // let [currentMessage, setCurrentMessage] = useState({});
-  let [searchTerm, setSearchTerm] = useState("");
+  const [filteredMessages, setFilteredMessages] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     if (
@@ -35,15 +32,6 @@ function App() {
     setMessages(response.data.records);
     setFilteredMessages(response.data.records);
   }
-
-  // function handleClick(event) {
-  //   let found = messages.find((message) => {
-  //     return message.id === event.target.id;
-  //   });
-  //   setCurrentMessage(found);
-  //   setSearchTerm("");
-  //   setFilteredMessages(messages);
-  // }
 
   useEffect(() => {
     getData();
