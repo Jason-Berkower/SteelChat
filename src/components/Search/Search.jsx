@@ -7,7 +7,7 @@ function Search(props) {
     setSearchTerm(event.target.value);
     setFilteredMessages(
       messages.filter((message) => {
-        message.fields.message
+        return message.fields.message
           .toLowerCase()
           .replace(/ /g, "")
           .includes(searchTerm.replace(/ /g, ""))

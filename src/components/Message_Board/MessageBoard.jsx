@@ -6,7 +6,7 @@ import './MessageBoard.css';
 
 function MessageBoard(props) {
   let [count, setCount] = useState(0);
-  let data = props.message.fields;
+  let data = props.message && props.message.fields;
 
   async function handleDelete() {
     let deleteURL = `${baseURL2}/${props.message.id}`
@@ -23,22 +23,25 @@ function MessageBoard(props) {
   }
 
   return (
-    <div className='card'>
-      <h3>{data.message}</h3>
-      <h5>{data.user}</h5>
-      <sub>{data.time}</sub>
-      <Link to={`/editpost/${props.message.id}`}>
-        <button>EDIT</button>
-      </Link>
-      <button>COMMENT</button>
-      <button onClick={handleDelete}>DELETE</button>
-      <div id='likes'>
-        <h4>Likes: {count}</h4>
-        <div id='like-buttons'>
-          <button id='like' onClick={increment}>Like</button>
-          <button id='dislike' onClick={decrement}>Dislikes</button>
+    <div>
+      { data ? <div className='card'>
+        < h3 > {data.message}</h3 >
+        <h5>{data.user}</h5>
+        <sub>{data.time}</sub>
+        <Link to={`/editpost/${props.message.id}`}>
+          <button>EDIT</button>
+        </Link>
+        <button>COMMENT</button>
+        <button onClick={handleDelete}>DELETE</button>
+        <div id='likes'>
+          <h4>Likes: {count}</h4>
+          <div id='like-buttons'>
+            <button id='like' onClick={increment}>Like</button>
+            <button id='dislike' onClick={decrement}>Dislikes</button>
+          </div>
         </div>
-      </div>
+      </div > : null
+      }
     </div>
   )
 }
