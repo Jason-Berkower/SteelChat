@@ -17,7 +17,7 @@ function App() {
 
   // let [messages, setMessages] = useState([]);
   let [filteredMessages, setFilteredMessages] = useState([]);
-  let [currentMessage, setCurrentMessage] = useState({});
+  // let [currentMessage, setCurrentMessage] = useState({});
   let [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
@@ -36,14 +36,14 @@ function App() {
     setFilteredMessages(response.data.records);
   }
 
-  function handleClick(event) {
-    let found = messages.find((message) => {
-      return message.id === event.target.id;
-    });
-    setCurrentMessage(found);
-    setSearchTerm("");
-    setFilteredMessages(messages);
-  }
+  // function handleClick(event) {
+  //   let found = messages.find((message) => {
+  //     return message.id === event.target.id;
+  //   });
+  //   setCurrentMessage(found);
+  //   setSearchTerm("");
+  //   setFilteredMessages(messages);
+  // }
 
   useEffect(() => {
     getData();
