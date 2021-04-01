@@ -20,7 +20,7 @@ function ProfileForm(props) {
       });
       setUser(newUser.fields);
     }
-  }, [params.id, props.user.length]);
+  }, [props.users, params.id, props.user.length]);
 
   function handleChange(event) {
     let { name, value } = event.target;
