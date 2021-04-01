@@ -30,6 +30,7 @@ function MessageBoard(props) {
       <Link to={`/editpost/${props.message.id}`}>
         <button>EDIT</button>
       </Link>
+      <button>COMMENT</button>
       <button onClick={handleDelete}>DELETE</button>
       <div id='likes'>
         <h4>Likes: {count}</h4>
