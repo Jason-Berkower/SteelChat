@@ -34,9 +34,11 @@ function ProfileForm(props) {
       if (password.length >= 8 && password.length <= 32) {
         const updateURL = `${baseURL}/${params.id}`;
         await axios.put(updateURL, { fields: user }, config);
+      } else {
+        alert("Insufficient Password Length! Must be 8 or more characters long.");
       }
     } else {
-      alert("Insufficient Password Length! Must be 8 or more characters long.");
+      await axios.post(baseURL, { fields: user }, config);
     }
     props.setToggle((prevState) => !prevState);
     history.push('/');

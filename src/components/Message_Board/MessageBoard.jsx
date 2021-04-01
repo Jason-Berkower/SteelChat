@@ -14,12 +14,12 @@ function MessageBoard(props) {
     props.setToggle((prevState) => !prevState);
   }
 
-  function increment(event) {
+  function increment() {
     setCount(prevCount => prevCount + 1);
   }
 
-  function decrement(event) {
-    setCount(prevCount => prevCount - 1)
+  async function decrement() {
+    setCount(prevCount => prevCount - 1);
   }
 
   return (
