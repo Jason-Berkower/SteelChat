@@ -45,41 +45,45 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Route path="/newprofile">
-        <ProfileForm users={users} setToggle={setToggle} />
-      </Route>
-      <Route exact path="/">
-        <h1 id="title">Welcome to SteelChat</h1>
-        <h2 id="title-card">The Message Board of Tomorrow!</h2>
-        <div className="flex-container">
-          <Search
-            setSearchTerm={setSearchTerm}
-            searchTerm={searchTerm}
-            setMessages={setMessages}
-            messages={messages}
-            setFilteredMessages={setFilteredMessages}
-          />
-          <div className="card-container">
-            {filteredMessages.map((message) => {
-              return (
-                <MessageBoard
-                  message={message}
-                  key={message.id}
-                  setToggle={setToggle}
-                />
-              );
-            })}
-          </div>
+      <div id="page-container">
+        <div id="content-wrap">
+          <Navbar />
+          <Route path="/newprofile">
+            <ProfileForm users={users} setToggle={setToggle} />
+          </Route>
+          <Route exact path="/">
+            <h1 id="title">Welcome to SteelChat</h1>
+            <h2 id="title-card">The Message Board of Tomorrow!</h2>
+            <div className="flex-container">
+              <Search
+                setSearchTerm={setSearchTerm}
+                searchTerm={searchTerm}
+                setMessages={setMessages}
+                messages={messages}
+                setFilteredMessages={setFilteredMessages}
+              />
+              <div className="card-container">
+                {filteredMessages.map((message) => {
+                  return (
+                    <MessageBoard
+                      message={message}
+                      key={message.id}
+                      setToggle={setToggle}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          </Route>
+          <Route path="/post">
+            <MessageForm messages={messages} setToggle={setToggle} />
+          </Route>
+          <Route path="/editpost/:id">
+            <MessageForm messages={messages} setToggle={setToggle} />
+          </Route>
         </div>
-      </Route>
-      <Route path="/post">
-        <MessageForm messages={messages} setToggle={setToggle} />
-      </Route>
-      <Route path="/editpost/:id">
-        <MessageForm messages={messages} setToggle={setToggle} />
-      </Route>
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }

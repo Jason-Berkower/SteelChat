@@ -16,7 +16,7 @@ function Search(props) {
   };
 
   return (
-    <div>
+    <div className='search-comp'>
       <label htmlFor='search'>Search</label>
       <input
         type='text'

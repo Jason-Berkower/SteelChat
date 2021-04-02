@@ -2,7 +2,7 @@
 
 ## Project Name
 
-SteelChat (`Working Name`)
+SteelChat
 
 ## Project Description
 
@@ -77,44 +77,39 @@ First API Snippet - SteelChat API, hosted by Airtable.
 ### PostMVP
 
 - Implement pseudo-user-authentication (perhaps with the use of local storage)
-- Implement advanced message functions (colored text, emotes, etc.)
-- Create dynamic, user-editable profiles (more than just a username)
+- ~~Implement advanced message functions (colored text, emotes, etc.)~~
+- ~~Create dynamic, user-editable profiles (more than just a username)~~
+- Implement search component.
 
 ---
 
 ## Project Schedule
 
-| Day      | Deliverable                                                                 | Status     |
-| -------- | --------------------------------------------------------------------------- | ---------- |
-| March 25 | Prompt / Wireframes / Component Hierarchy / Timeframes / Readme             | Complete   |
-| March 26 | Project Approval / Initial app setup / Research / Basic Render Capabilities | Partial    |
-| March 28 | Pseudocode / Base Component Implementation                                  | Incomplete |
-| March 29 | Core Styling / Base MVP completed                                           | Incomplete |
-| March 30 | Transition to PostMVP                                                       | Incomplete |
-| March 31 | Continuation of PostMVP / Polish                                            | Incomplete |
-| April 1  | Polish / Final debug / Final PostMVP                                        | Incomplete |
-| April 2  | Deployment / Presentations                                                  | Incomplete |
+| Day      | Deliverable                                                                  | Status     |
+| -------- | ---------------------------------------------------------------------------- | ---------- |
+| March 25 | Prompt / Wireframes / Component Hierarchy / Timeframes / Readme              | Complete   |
+| March 26 | Project Approval / Initial app setup / Research / Basic Render Capabilities  | Complete   |
+| March 29 | Pseudocode / Base Component Implementation Core Styling / Base MVP completed | Complete   |
+| March 30 | Transition to PostMVP                                                        | Incomplete |
+| March 31 | Continuation of PostMVP / Polish                                             | Complete   |
+| April 1  | Polish / Final debug / Final PostMVP / Deployment                            | Complete   |
+| April 2  | Presentations                                                                | Incomplete |
 
 ---
 
 ## Timeframes
 
-| Component                      | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------------------ | :------: | :------------: | :-----------: | :---------: |
-| Concept Research               |    M     |     1.5hrs     |       –       |      –      |
-| Basic App Hierarchy            |    H     |     1.5hrs     |       –       |      –      |
-| Addressing API                 |    M     |      3hrs      |       –       |      –      |
-| Building Navbar/Footer         |    M     |     1.5hr      |       –       |      –      |
-| Building User Profile & Forms  |    H     |      2hrs      |       –       |      –      |
-| Building Message Interface     |    H     |      6hrs      |       –       |      –      |
-| Building Last 10 Messages View |    H     |      3hrs      |       –       |      –      |
-| Adding Styling                 |    M     |      6hrs      |       –       |      –      |
-| PostMVP Goals                  |    M     |     12hrs      |       –       |      –      |
-| Total                          |          |    37.5hrs     |               |      –      |
-
-#### Project Completion Floor: ~30hrs
-
-#### Project Completion Ceiling: ~50hrs
+| Component                     | Priority | Estimated Time | Time Invested | Actual Time |
+| ----------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Concept Research              |    M     |     1.5hrs     |    1.5hrs     |   1.5hrs    |
+| Basic App Hierarchy           |    H     |     1.5hrs     |    1.5hrs     |   1.5hrs    |
+| Addressing API                |    M     |      3hrs      |     2hrs      |    2hrs     |
+| Building Navbar/Footer        |    M     |     1.5hr      |    1.5hrs     |   1.5hrs    |
+| Building User Profile & Forms |    H     |      2hrs      |     4hrs      |    4hrs     |
+| Building Message Interface    |    H     |      6hrs      |     6hrs      |    6hrs     |
+| Adding Styling                |    H     |      6hrs      |     8hrs      |    8hrs     |
+| PostMVP Goals                 |    M     |     12hrs      |     10hrs     |    10hrs    |
+| Total                         |          |    33.5hrs     |               |   34.5hrs   |
 
 ---
 
@@ -151,7 +146,41 @@ First API Snippet - SteelChat API, hosted by Airtable.
 
 ## Changelog
 
-### (March 26th) v0.2.1, "Second Pitch
+### (April 1st) v1.0, "Presentation Build"
+
+- Added basic 'like' system. Proof of concept.
+- Removed userprofile legacy component.
+- Completed search component.
+- Removed comments and unneeded logs.
+- Implemented flexible styling for four different screen sizes.
+- Linked with netlify and deployed.
+- Various minor tweaks and bugfixes.
+
+### (March 31st) v0.9, "Smithy"
+
+- Added pseudo-password-validation.
+- Improved baseline styling for cards and forms.
+- Fully fleshed out appearance of message cards.
+- Created boilerplate for, then began to flesh out, search function.
+- Various minor tweaks and bugfixes.
+
+### (March 30th) v0.8, "Extract"
+
+- Linked components together.
+- Modified and refined function operation.
+- Baseline Styling added.
+- Finished second API.
+- Various minor tweaks and bugfixes.
+
+### (March 29th) v0.5, "Mineral"
+
+- Established message board, forms, and initial user profile.
+- Connected API with forms and page render.
+- Began second API.
+- Created Navbar and footer components.
+- Various minor tweaks.
+
+### (March 26th) v0.2.1, "Second Pitch"
 
 - Modified readme elements to reflect new project direction.
 - Adjusted wireframes, api, and component hierarchy.
