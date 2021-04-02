@@ -162,6 +162,7 @@ First API Snippet - SteelChat API, hosted by Airtable.
 - Improved baseline styling for cards and forms.
 - Fully fleshed out appearance of message cards.
 - Created boilerplate for, then began to flesh out, search function.
+- Added comment button. Proof of concept.
 - Various minor tweaks and bugfixes.
 
 ### (March 30th) v0.8, "Extract"
