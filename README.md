@@ -2,7 +2,7 @@
 
 ## Project Name
 
-SteelChat
+[SteelChat](https://606678a102d7090008835cc2--stupefied-roentgen-45410b.netlify.app/)
 
 ## Project Description
 
@@ -85,15 +85,15 @@ First API Snippet - SteelChat API, hosted by Airtable.
 
 ## Project Schedule
 
-| Day      | Deliverable                                                                 | Status     |
-| -------- | --------------------------------------------------------------------------- | ---------- |
-| March 25 | Prompt / Wireframes / Component Hierarchy / Timeframes / Readme             | Complete   |
-| March 26 | Project Approval / Initial app setup / Research / Basic Render Capabilities | Complete   |
-| March 29 | Pseudocode / Base Component Implementation Core Styling                     | Complete   |
-| March 30 | Base MVP completed / Transition to PostMVP                                  | Complete   |
-| March 31 | Continuation of PostMVP / Polish                                            | Complete   |
-| April 1  | Polish / Final debug / Final PostMVP / Deployment                           | Complete   |
-| April 2  | Presentations                                                               | Incomplete |
+| Day      | Deliverable                                                                 | Status   |
+| -------- | --------------------------------------------------------------------------- | -------- |
+| March 25 | Prompt / Wireframes / Component Hierarchy / Timeframes / Readme             | Complete |
+| March 26 | Project Approval / Initial app setup / Research / Basic Render Capabilities | Complete |
+| March 29 | Pseudocode / Base Component Implementation Core Styling                     | Complete |
+| March 30 | Base MVP completed / Transition to PostMVP                                  | Complete |
+| March 31 | Continuation of PostMVP / Polish                                            | Complete |
+| April 1  | Polish / Final debug / Final PostMVP / Deployment                           | Complete |
+| April 2  | Presentations                                                               | Complete |
 
 ---
 
